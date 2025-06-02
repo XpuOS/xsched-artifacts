@@ -1,0 +1,3 @@
+[submodule "sys/xsched"]
+	path = sys/xsched
+	url = https://github.com/XpuOS/xsched.git
