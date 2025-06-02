@@ -1,0 +1,14 @@
+{
+    "XShim": [
+        "shim/src/shim.cpp"
+    ],
+    "Lv1": [
+        "hal/include/xsched/ascend/hal.h",
+        "hal/include/xsched/ascend/hal/acl_assert.h",
+        "hal/include/xsched/ascend/hal/acl_queue.h",
+        "hal/include/xsched/ascend/hal/event_pool.h",
+        "hal/include/xsched/ascend/hal/handle.h",
+        "hal/src/acl_command.cpp",
+        "hal/src/acl_queue.cpp"
+    ]
+}

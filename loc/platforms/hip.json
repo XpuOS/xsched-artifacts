@@ -1,0 +1,18 @@
+{
+    "XShim": [
+        "shim/include/xsched/hip/shim/shim.h",
+        "shim/src/shim.cpp"
+    ],
+    "Lv1": [
+        "hal/include/xsched/hip/hal/event_pool.h",
+        "hal/include/xsched/hip/hal/hal.h",
+        "hal/include/xsched/hip/hal/handle.h",
+        "hal/include/xsched/hip/hal/hip_assert.h",
+        "hal/include/xsched/hip/hal/hip_command.h",
+        "hal/include/xsched/hip/hal/hip_queue.h",
+        "hal/include/xsched/hip/hal/kernel_param.h",
+        "hal/src/hip_command.cpp",
+        "hal/src/hip_queue.cpp",
+        "hal/src/kernel_param.cpp"
+    ]
+}

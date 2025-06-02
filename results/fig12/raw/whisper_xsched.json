@@ -1,0 +1,56 @@
+init: loaded WAV file with 7878809 samples
+whisper_init_from_file_with_params_no_state: loading model from '/xsched-artifacts/assets/models/ggml-medium.en.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 0
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51864
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1024
+whisper_model_load: n_audio_head  = 16
+whisper_model_load: n_audio_layer = 24
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1024
+whisper_model_load: n_text_head   = 16
+whisper_model_load: n_text_layer  = 24
+whisper_model_load: n_mels        = 80
+whisper_model_load: ftype         = 1
+whisper_model_load: qntvr         = 0
+whisper_model_load: type          = 4 (medium)
+whisper_model_load: adding 1607 extra tokens
+whisper_model_load: n_langs       = 99
+whisper_model_load:      CPU total size =  1533.14 MB
+whisper_model_load: model size    = 1533.14 MB
+whisper_init_state: kv self size  =  150.99 MB
+whisper_init_state: kv cross size =  150.99 MB
+whisper_init_state: kv pad  size  =    6.29 MB
+whisper_init_state: compute buffer (conv)   =   28.55 MB
+whisper_init_state: compute buffer (encode) =  594.09 MB
+whisper_init_state: compute buffer (cross)  =    7.72 MB
+whisper_init_state: compute buffer (decode) =  141.96 MB
+whisper_ctx_init_openvino_encoder: loading OpenVINO model from '/xsched-artifacts/assets/models/ggml-medium.en-encoder-openvino.xml'
+whisper_ctx_init_openvino_encoder: first run on a device may take a while ...
+whisper_openvino_init: path_model = /xsched-artifacts/assets/models/ggml-medium.en-encoder-openvino.xml, device = NPU, cache_dir = /xsched-artifacts/assets/models/ggml-medium.en-encoder-openvino-cache
+whisper_ctx_init_openvino_encoder: OpenVINO model loaded
+
+main: processing 48000 samples (step = 3.0 sec / len = 3.0 sec / keep = 0.2 sec), 8 threads, lang = en, task = transcribe, timestamps = 0 ...
+main: n_new_line = 1, no_context = 1
+
+{"time": "05:08:49.593634", "segment_id": 0, "latency (ms)": 2334.528},
+{"time": "05:08:52.144243", "segment_id": 1, "latency (ms)": 1885.921},
+{"time": "05:08:55.345237", "segment_id": 2, "latency (ms)": 2086.853},
+{"time": "05:08:58.280280", "segment_id": 3, "latency (ms)": 2021.825},
+{"time": "05:09:01.185688", "segment_id": 4, "latency (ms)": 1927.110},
+{"time": "05:09:04.299603", "segment_id": 5, "latency (ms)": 2040.974},
+{"time": "05:09:07.365481", "segment_id": 6, "latency (ms)": 2106.779},
+{"time": "05:09:10.413769", "segment_id": 7, "latency (ms)": 2154.987},
+{"time": "05:09:13.466537", "segment_id": 8, "latency (ms)": 2207.650},
+{"time": "05:09:16.596701", "segment_id": 9, "latency (ms)": 2337.775},
+{"time": "05:09:19.246087", "segment_id": 10, "latency (ms)": 1987.072},
+{"time": "05:09:22.165095", "segment_id": 11, "latency (ms)": 1906.008},
+{"time": "05:09:25.277772", "segment_id": 12, "latency (ms)": 2018.442},
+{"time": "05:09:28.194313", "segment_id": 13, "latency (ms)": 1934.899},
+{"time": "05:09:31.215293", "segment_id": 14, "latency (ms)": 1955.839},
+{"time": "05:09:34.314462", "segment_id": 15, "latency (ms)": 2054.950},
+{"time": "05:09:37.377283", "segment_id": 16, "latency (ms)": 2117.702},

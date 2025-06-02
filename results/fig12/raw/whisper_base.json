@@ -1,0 +1,69 @@
+init: loaded WAV file with 7878809 samples
+whisper_init_from_file_with_params_no_state: loading model from '/xsched-artifacts/assets/models/ggml-medium.en.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 0
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51864
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1024
+whisper_model_load: n_audio_head  = 16
+whisper_model_load: n_audio_layer = 24
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1024
+whisper_model_load: n_text_head   = 16
+whisper_model_load: n_text_layer  = 24
+whisper_model_load: n_mels        = 80
+whisper_model_load: ftype         = 1
+whisper_model_load: qntvr         = 0
+whisper_model_load: type          = 4 (medium)
+whisper_model_load: adding 1607 extra tokens
+whisper_model_load: n_langs       = 99
+whisper_model_load:      CPU total size =  1533.14 MB
+whisper_model_load: model size    = 1533.14 MB
+whisper_init_state: kv self size  =  150.99 MB
+whisper_init_state: kv cross size =  150.99 MB
+whisper_init_state: kv pad  size  =    6.29 MB
+whisper_init_state: compute buffer (conv)   =   28.55 MB
+whisper_init_state: compute buffer (encode) =  594.09 MB
+whisper_init_state: compute buffer (cross)  =    7.72 MB
+whisper_init_state: compute buffer (decode) =  141.96 MB
+whisper_ctx_init_openvino_encoder: loading OpenVINO model from '/xsched-artifacts/assets/models/ggml-medium.en-encoder-openvino.xml'
+whisper_ctx_init_openvino_encoder: first run on a device may take a while ...
+whisper_openvino_init: path_model = /xsched-artifacts/assets/models/ggml-medium.en-encoder-openvino.xml, device = NPU, cache_dir = /xsched-artifacts/assets/models/ggml-medium.en-encoder-openvino-cache
+whisper_ctx_init_openvino_encoder: OpenVINO model loaded
+
+main: processing 48000 samples (step = 3.0 sec / len = 3.0 sec / keep = 0.2 sec), 8 threads, lang = en, task = transcribe, timestamps = 0 ...
+main: n_new_line = 1, no_context = 1
+
+{"time": "09:01:17.507146", "segment_id": 0, "latency (ms)": 1995.427},
+{"time": "09:01:20.225778", "segment_id": 1, "latency (ms)": 1715.494},
+{"time": "09:01:23.316295", "segment_id": 2, "latency (ms)": 1805.962},
+{"time": "09:01:26.310931", "segment_id": 3, "latency (ms)": 1800.479},
+{"time": "09:01:29.335298", "segment_id": 4, "latency (ms)": 1824.803},
+{"time": "09:01:32.331922", "segment_id": 5, "latency (ms)": 1821.359},
+{"time": "09:01:35.399627", "segment_id": 6, "latency (ms)": 1888.985},
+{"time": "09:01:38.432972", "segment_id": 7, "latency (ms)": 1922.262},
+{"time": "09:01:41.486568", "segment_id": 8, "latency (ms)": 1975.794},
+{"time": "09:01:44.641054", "segment_id": 9, "latency (ms)": 2130.204},
+{"time": "09:01:47.302082", "segment_id": 10, "latency (ms)": 1791.167},
+{"time": "09:01:50.168171", "segment_id": 11, "latency (ms)": 1657.172},
+{"time": "09:01:53.351273", "segment_id": 12, "latency (ms)": 1840.168},
+{"time": "09:01:56.287664", "segment_id": 13, "latency (ms)": 1776.478},
+{"time": "09:01:59.222162", "segment_id": 14, "latency (ms)": 1710.893},
+{"time": "09:02:02.372644", "segment_id": 15, "latency (ms)": 1861.312},
+{"time": "09:02:05.323296", "segment_id": 16, "latency (ms)": 1811.843},
+{"time": "09:02:08.399960", "segment_id": 17, "latency (ms)": 1888.469},
+{"time": "09:02:11.204468", "segment_id": 18, "latency (ms)": 1692.853},
+{"time": "09:02:14.447064", "segment_id": 19, "latency (ms)": 1935.391},
+{"time": "09:02:17.337932", "segment_id": 20, "latency (ms)": 1826.174},
+{"time": "09:02:20.457031", "segment_id": 21, "latency (ms)": 1945.175},
+{"time": "09:02:23.342683", "segment_id": 22, "latency (ms)": 1830.746},
+{"time": "09:02:26.534524", "segment_id": 23, "latency (ms)": 2022.488},
+{"time": "09:02:29.367131", "segment_id": 24, "latency (ms)": 1854.986},
+{"time": "09:02:32.201072", "segment_id": 25, "latency (ms)": 1688.880},
+{"time": "09:02:35.187242", "segment_id": 26, "latency (ms)": 1674.969},
+{"time": "09:02:38.308356", "segment_id": 27, "latency (ms)": 1796.001},
+{"time": "09:02:41.225865", "segment_id": 28, "latency (ms)": 1713.449},
+{"time": "09:02:44.216716", "segment_id": 29, "latency (ms)": 1704.215},

@@ -1,0 +1,22 @@
+{
+    "XShim": [
+        "shim/include/xsched/levelzero/shim/cmd_list.h",
+        "shim/include/xsched/levelzero/shim/shim.h",
+        "shim/src/cmd_list.cpp",
+        "shim/src/shim.cpp"
+    ],
+    "Lv1": [
+        "hal/include/xsched/levelzero/hal.h",
+        "hal/include/xsched/levelzero/hal/pool.h",
+        "hal/include/xsched/levelzero/hal/types.h",
+        "hal/include/xsched/levelzero/hal/ze_assert.h",
+        "hal/include/xsched/levelzero/hal/ze_command.h",
+        "hal/include/xsched/levelzero/hal/ze_queue.h",
+        "hal/src/pool.cpp",
+        "hal/src/ze_command.cpp",
+        "hal/src/ze_queue.cpp"
+    ],
+    "Lv2 NPU": [
+        "hal/include/xsched/levelzero/hal/npu_sched.h"
+    ]
+}

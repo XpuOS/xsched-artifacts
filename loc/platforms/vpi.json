@@ -1,0 +1,16 @@
+{
+    "XShim": [
+        "shim/include/xsched/vpi/shim/shim.h",
+        "shim/src/shim.cpp"
+    ],
+    "Lv1": [
+        "hal/include/xsched/vpi/hal.h",
+        "hal/include/xsched/vpi/hal/event_pool.h",
+        "hal/include/xsched/vpi/hal/handle.h",
+        "hal/include/xsched/vpi/hal/vpi_assert.h",
+        "hal/include/xsched/vpi/hal/vpi_command.h",
+        "hal/include/xsched/vpi/hal/vpi_queue.h",
+        "hal/src/vpi_command.cpp",
+        "hal/src/vpi_queue.cpp"
+    ]
+}

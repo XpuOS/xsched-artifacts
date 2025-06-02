@@ -1,0 +1,16 @@
+{
+    "XShim": [
+        "shim/include/xsched/cudla/shim/shim.h",
+        "shim/src/shim.cpp"
+    ],
+    "Lv1": [
+        "hal/include/xsched/cudla/hal.h",
+        "hal/include/xsched/cudla/hal/cudla_assert.h",
+        "hal/include/xsched/cudla/hal/cudla_command.h",
+        "hal/include/xsched/cudla/hal/cudla_queue.h",
+        "hal/include/xsched/cudla/hal/event_pool.h",
+        "hal/include/xsched/cudla/hal/handle.h",
+        "hal/src/cudla_command.cpp",
+        "hal/src/cudla_queue.cpp"
+    ]
+}

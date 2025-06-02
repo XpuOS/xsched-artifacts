@@ -1,0 +1,46 @@
+{
+    "XShim": [
+        "shim/include/xsched/cuda/shim/shim.h",
+        "shim/src/shim.cpp"
+    ],
+    "Lv1": [
+        "hal/include/xsched/cuda/hal.h",
+        "hal/include/xsched/cuda/hal/common/cuda_assert.h",
+        "hal/include/xsched/cuda/hal/common/cuda_command.h",
+        "hal/include/xsched/cuda/hal/common/event_pool.h",
+        "hal/include/xsched/cuda/hal/common/handle.h",
+        "hal/include/xsched/cuda/hal/common/levels.h",
+        "hal/include/xsched/cuda/hal/level1/cuda_queue.h",
+        "hal/src/common/cuda_command.cpp",
+        "hal/src/common/event_pool.cpp",
+        "hal/src/level1/cuda_queue.cpp"
+    ],
+    "Lv2 K40m": [
+        "hal/include/xsched/cuda/hal/level2/cuda_queue.h",
+        "hal/include/xsched/cuda/hal/level2/instrument.h",
+        "hal/include/xsched/cuda/hal/level2/mm.h",
+        "hal/include/xsched/cuda/hal/level2/op_stream.h",
+        "hal/src/level2/cuda_queue.cpp",
+        "hal/src/level2/instrument.cpp",
+        "hal/src/level2/mm.cpp",
+        "hal/src/level2/op_stream.cpp",
+        "hal/src/arch/sm35.cpp"
+    ],
+    "Lv2 GV100": [
+        "hal/include/xsched/cuda/hal/level2/cuda_queue.h",
+        "hal/include/xsched/cuda/hal/level2/instrument.h",
+        "hal/include/xsched/cuda/hal/level2/mm.h",
+        "hal/include/xsched/cuda/hal/level2/op_stream.h",
+        "hal/src/level2/cuda_queue.cpp",
+        "hal/src/level2/instrument.cpp",
+        "hal/src/level2/mm.cpp",
+        "hal/src/level2/op_stream.cpp",
+        "hal/src/arch/sm70.cpp"
+    ],
+    "Lv3 GV100": [
+        "hal/include/xsched/cuda/hal/level3/cuda_queue.h",
+        "hal/include/xsched/cuda/hal/level3/trap.h",
+        "hal/src/level3/cuda_queue.cpp",
+        "hal/src/level3/trap.cpp"
+    ]
+}
