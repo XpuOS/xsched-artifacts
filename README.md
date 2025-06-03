@@ -1,6 +1,20 @@
 # Artifact Evaluation for XSched [OSDI'25]
 
 This repository contains scripts and instructions for reproducing the primary experiments in our OSDI '25 paper "Preemptive Scheduling for Diverse XPUs using Multi-level Hardware Model".
+This repository is also archived on Zenodo (https://doi.org/10.5281/zenodo.15327992) as "Artifacts for XSched [OSDI'25] (Version v3)".
+
+
+## Clone
+
+```bash
+git clone https://github.com/XpuOS/xsched-artifacts.git
+cd xsched-artifacts
+git submodule update --init --recursive
+
+# download assets (models and media)
+cd assets
+bash ./download.sh
+```
 
 ## Overview
 
@@ -8,11 +22,11 @@ XSched is a preemptive scheduling framework for diverse heterogeneous accelerato
 
 This artifact contains the **source code of XSched**, and **the code and scripts to reproduce the primary experiments in the paper**. The included experiments are:
 
-- The effectiveness of XSched's preemptive scheduling (Figure 7)
-- The effectiveness of XSched's multi-level hardware model (Figure 9)
-- Case study 1 - GPU harvesting on multi-tenant server (Figure 11)
-- Case study 2 - Video conferencing on AIPC (Figure 12)
-- Case study 3 - Multi-model inference serving (Figure 13)
+- The effectiveness of XSched's preemptive scheduling (fig7, or Figure 9 in our final paper)
+- The effectiveness of XSched's multi-level hardware model (fig9, or Figure 11 in our final paper)
+- Case study 1 - GPU harvesting on multi-tenant server (fig11, or Figure 13 in our final paper)
+- Case study 2 - Video conferencing on AIPC (fig12, or Figure 14 in our final paper)
+- Case study 3 - Multi-model inference serving (fig13, or Figure 15 in our final paper)
 
 ## Table of Contents
 
