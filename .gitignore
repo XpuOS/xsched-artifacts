@@ -1,1 +1,9 @@
+.vscode
 .DS_Store
+data
+build
+output
+assets
+cache
+nc_workspace
+__pycache__
