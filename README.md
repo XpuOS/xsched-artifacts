@@ -41,7 +41,7 @@ This artifact contains the **source code of XSched**, and **the code and scripts
 > tree .
 ├── assets               # Assets for the experiments
 ├── cuda                 # Experiment codes for NVIDIA GPUs
-│   ├── fig7             # Experiment codes to reproduce Figure 7 in the paper
+│   ├── fig7             # Experiment codes to reproduce fig7 (or Figure 9 in the final paper)
 │   ├── fig9
 │   └── fig11
 ├── ascend               # Experiment codes for Ascend 910b
@@ -50,12 +50,12 @@ This artifact contains the **source code of XSched**, and **the code and scripts
 ├── npu3720              # Experiment codes for Intel NPU3720
 ├── vpi                  # Experiment codes for NVIDIA PVA and OFA
 ├── results              # Results of the experiments
-│   └── fig7             # Results to reproduce Figure 7 in the paper
+│   └── fig7             # Results to reproduce fig7 (or Figure 9 in the final paper)
 │       ├── raw          # Raw results
 │       └── scripts      # Scripts to process and plot the results
 ├── sys
-│   ├── tgs              # TGS system used for the experiments of Figure 11
-│   ├── vcuda            # vCUDA system used for the experiments of Figure 11
+│   ├── tgs              # TGS system used for the experiments of case study 1
+│   ├── vcuda            # vCUDA system used for the experiments of case study 1
 │   └── xsched           # Source code of XSched
 ```
 
@@ -130,18 +130,18 @@ Here is the overview of the included experiments and the required XPUs.
 
 | XPU | Included Experiments |
 |----------|------------|
-| NVIDIA GV100 | Figure 7, Figure 9, Figure 11, Figure 13 |
-| NVIDIA K40m | Figure 7, Figure 9 |
-| AMD MI50 | Figure 7, Figure 11 |
-| Ascend 910b | Figure 7 |
-| Intel Arc iGPU | Figure 7, Figure 12 |
-| Intel NPU3720 | Figure 7, Figure 9, Figure 11, Figure 12 |
-| NVIDIA DLA | Figure 7 |
-| NVIDIA PVA | Figure 7 |
-| NVIDIA OFA | Figure 7 |
+| NVIDIA GV100 | fig7, fig9, fig11, fig13 |
+| NVIDIA K40m | fig7, fig9 |
+| AMD MI50 | fig7, fig11 |
+| Ascend 910b | fig7 |
+| Intel Arc iGPU | fig7, fig12 |
+| Intel NPU3720 | fig7, fig9, fig11, fig12 |
+| NVIDIA DLA | fig7 |
+| NVIDIA PVA | fig7 |
+| NVIDIA OFA | fig7 |
 
 
-### The effectiveness of XSched's preemptive scheduling (Figure 7)
+### The effectiveness of XSched's preemptive scheduling (fig7)
 
 This experiment evaluates the effectiveness of XSched's two scheduling policies (Fixed priority policy and Bandwidth partition policy) to schedule the a set of tasks on different XPUs. 
 
@@ -160,8 +160,8 @@ For each policy and each XPU, we run three experiments with different approaches
 
 #### Expected Results
 
-Figure 7 (top) shows the latency CDF of the foreground process using Fixed priority policy.
-Figure 7 (bottom) shows the normalized throughput of the background process using Bandwidth partition policy.
+fig7 (top) shows the latency CDF of the foreground process using Fixed priority policy.
+fig7 (bottom) shows the normalized throughput of the background process using Bandwidth partition policy.
 
 Expected results:
 - XSched can effectively reduce the latency of the foreground process (near to standalone) using Fixed priority policy.
@@ -184,7 +184,7 @@ Expected results:
 
 
 
-### The effectiveness of XSched's multi-level hardware model (Figure 9)
+### The effectiveness of XSched's multi-level hardware model (fig9)
 
 This experiment evaluates the effectiveness of XSched's multi-level hardware model on the scheduling performance.
 
@@ -215,7 +215,7 @@ Implementing a higher-level interface (e.g., Level 2 or Level 3) can effectively
 
 
 
-### Case study 1 - GPU harvesting on multi-tenant server (Figure 11)
+### Case study 1 - GPU harvesting on multi-tenant server (fig11)
 
 This experiment is a case study on the scheduling of GPU tasks on multi-tenant server.
 
@@ -256,7 +256,7 @@ Using XSched, the Pjob can get a stable performance (near to standalone) and the
 | AMD MI50 | [README](hip/fig11/README.md) |
 
 
-### Case study 2 - Video conferencing on AIPC (Figure 12)
+### Case study 2 - Video conferencing on AIPC (fig12)
 
 This experiment is a case study on the scheduling of video conferencing tasks on AIPC.
 
@@ -285,7 +285,7 @@ XSched can effectively reduce the P99 frame latency of the fake-background task 
 | Intel NPU3720 | [README](npu3720/fig12/README.md) |
 
 
-### Case study 3a - Multi-model inference serving using Triton Inference Server (Figure 13a)
+### Case study 3a - Multi-model inference serving using Triton Inference Server (fig13a)
 
 This experiment demonstrates how XSched can be integrated into Triton Inference Server to enable priority-based scheduling of multi-model inference tasks.
 
@@ -317,7 +317,7 @@ By integrating XSched into Triton Inference Server, the high-priority client can
 
 
 
-### Case study 3b - Multi-model inference serving using Paella (Figure 13b)
+### Case study 3b - Multi-model inference serving using Paella (fig13b)
 
 This experiment compares the performance of XSched with Paella (SOSP'23, a state-of-the-art inference serving system) on NVIDIA GV100.
 
