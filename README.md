@@ -1,6 +1,6 @@
 # Artifact Evaluation for XSched [OSDI'25]
 
-This repository contains scripts and instructions for reproducing the primary experiments in our OSDI '25 paper "Preemptive Scheduling for Diverse XPUs using Multi-level Hardware Model".
+This repository contains scripts and instructions for reproducing the primary experiments in our OSDI '25 paper "XSched: Preemptive Scheduling for Diverse XPUs".
 This repository is also archived on Zenodo (https://doi.org/10.5281/zenodo.15327992) as "Artifacts for XSched [OSDI'25] (Version v3)".
 
 
