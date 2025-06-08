@@ -3,6 +3,7 @@
 This repository contains scripts and instructions for reproducing the primary experiments in our OSDI '25 paper "XSched: Preemptive Scheduling for Diverse XPUs".
 This repository is also archived on Zenodo (https://doi.org/10.5281/zenodo.15327992) as "Artifacts for XSched [OSDI'25] (Version v3)".
 
+Please check our [XSched Repo](https://github.com/XpuOS/xsched) for more feature updates! ^_^
 
 ## Clone
 
